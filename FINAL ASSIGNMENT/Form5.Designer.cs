@@ -245,9 +245,9 @@
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button12.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(935, 515);
+            this.button12.Location = new System.Drawing.Point(918, 506);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(172, 109);
+            this.button12.Size = new System.Drawing.Size(244, 109);
             this.button12.TabIndex = 20;
             this.button12.Text = "HOME";
             this.button12.UseVisualStyleBackColor = false;

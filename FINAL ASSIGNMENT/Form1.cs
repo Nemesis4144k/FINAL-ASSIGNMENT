@@ -23,5 +23,19 @@ namespace FINAL_ASSIGNMENT
             newform.Show();
             this.Hide();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form2 newform = new Form2();
+            newform.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 newform = new Form3();
+            newform.Show();
+            this.Hide();
+        }
     }
 }

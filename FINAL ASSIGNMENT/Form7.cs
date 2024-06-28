@@ -10,21 +10,18 @@ using System.Windows.Forms;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form2: Form
+    public partial class Form7 : Form
     {
-        public Form2()
+        public Form7()
         {
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            Form4 newform = new Form4();
+            newform.Show();
+            this.Hide();
         }
     }
 }

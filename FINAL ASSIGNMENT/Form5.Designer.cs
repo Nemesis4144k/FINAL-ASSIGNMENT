@@ -44,8 +44,9 @@
             this.button12 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(54, 35);
+            this.label2.Location = new System.Drawing.Point(3, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(497, 65);
             this.label2.TabIndex = 2;
@@ -69,7 +70,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(30, 285);
+            this.button3.Location = new System.Drawing.Point(522, 117);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(17, 0, 10, 0);
             this.button3.Size = new System.Drawing.Size(251, 93);
@@ -87,7 +88,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(347, 285);
+            this.button1.Location = new System.Drawing.Point(779, 118);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(40, 0, 55, 0);
             this.button1.Size = new System.Drawing.Size(251, 93);
@@ -104,7 +105,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(666, 284);
+            this.button2.Location = new System.Drawing.Point(522, 216);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 70, 0);
             this.button2.Size = new System.Drawing.Size(251, 93);
@@ -122,7 +123,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(347, 403);
+            this.button4.Location = new System.Drawing.Point(522, 315);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(15, 0, 7, 0);
             this.button4.Size = new System.Drawing.Size(251, 93);
@@ -139,7 +140,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(666, 403);
+            this.button5.Location = new System.Drawing.Point(779, 315);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 45, 0);
             this.button5.Size = new System.Drawing.Size(251, 93);
@@ -156,7 +157,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(977, 285);
+            this.button6.Location = new System.Drawing.Point(1036, 118);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(38, 0, 27, 0);
             this.button6.Size = new System.Drawing.Size(251, 93);
@@ -173,7 +174,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(30, 403);
+            this.button7.Location = new System.Drawing.Point(779, 217);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 35, 0);
             this.button7.Size = new System.Drawing.Size(251, 93);
@@ -189,7 +190,7 @@
             this.button9.Font = new System.Drawing.Font("Segoe UI", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(347, 530);
+            this.button9.Location = new System.Drawing.Point(522, 414);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(248, 93);
             this.button9.TabIndex = 16;
@@ -204,7 +205,7 @@
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(30, 530);
+            this.button10.Location = new System.Drawing.Point(1036, 315);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.button10.Size = new System.Drawing.Size(251, 93);
@@ -221,7 +222,7 @@
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(977, 403);
+            this.button11.Location = new System.Drawing.Point(1036, 216);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 28, 0);
             this.button11.Size = new System.Drawing.Size(251, 93);
@@ -238,7 +239,7 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(1036, 519);
+            this.button8.Location = new System.Drawing.Point(-4, 485);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(255, 67);
@@ -251,7 +252,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button12.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(673, 568);
+            this.button12.Location = new System.Drawing.Point(39, 332);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(244, 109);
             this.button12.TabIndex = 20;
@@ -272,7 +273,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(620, 35);
+            this.groupBox1.Location = new System.Drawing.Point(25, 103);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(402, 192);
             this.groupBox1.TabIndex = 23;
@@ -280,33 +281,44 @@
             this.groupBox1.Text = "Enter Expenses";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 25);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Amount in LKR";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(18, 134);
+            this.label3.Location = new System.Drawing.Point(18, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 21);
+            this.label3.Size = new System.Drawing.Size(180, 21);
             this.label3.TabIndex = 24;
-            this.label3.Text = "CHOOSE EXPENSE TYPE FROM BELOW CHOICES";
+            this.label3.Text = "CHOOSE EXPENSE TYPE";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 25);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Amount in LKR";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(844, 482);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 25);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "name";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.ClientSize = new System.Drawing.Size(1333, 732);
+            this.ClientSize = new System.Drawing.Size(1295, 659);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button8);
@@ -350,5 +362,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -11,13 +11,14 @@ using System.Data.SqlClient;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form2: Form
+    public partial class LOGIN: Form
     {
-        public Form2()
+        public static string Username = "";
+        public LOGIN()
         {
             InitializeComponent();
         }
-        SqlConnection Conn = new SqlConnection(@"Data Source=Nemesis\SQLEXPRESS02;Initial Catalog=""Final Assignment"";Integrated Security=True;Encrypt=False");
+        SqlConnection Conn = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -27,12 +28,12 @@ namespace FINAL_ASSIGNMENT
         {
       
 
-            String Username, user_password;
-            Username = textBox1.Text;
-            user_password = textBox2.Text;
+            String User_password;
+            Username = txt_username.Text;
+            User_password = txt_password.Text;
             try
             {
-                String Querry = "Select*From Users Where Customer_Name = '" + Username + "' AND Customer_Password '" + user_password + "'";
+                String Querry = "Select *From Users Where Username = '" + Username + "' AND User_Password = '" + User_password + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(Querry, Conn);
 
                 DataTable dtable = new DataTable();
@@ -40,22 +41,24 @@ namespace FINAL_ASSIGNMENT
 
                 if (dtable.Rows.Count>0)
                 {
-                    Username = textBox1.Text;
-                    user_password = textBox2.Text;
+                    Username = txt_username.Text;
+                    User_password = txt_password.Text;
 
                     // to go to dashboard
                     Form4 form4= new Form4();
                     form4.Show();
                     this.Hide();
+                    Form5 form5=new Form5();
+                    
 
                 }
                 else
                 {
                     MessageBox.Show("Invalid Login Details","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    textBox1.Clear();
-                    textBox2.Clear();
+                    txt_username.Clear();
+                    txt_password.Clear();
                     //to focus username
-                    textBox1.Focus();   
+                    txt_username.Focus();   
                 }
             }
             catch
@@ -66,6 +69,7 @@ namespace FINAL_ASSIGNMENT
             {
                 Conn.Close();
             }
+
 
         }
 

@@ -19,14 +19,14 @@ namespace FINAL_ASSIGNMENT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 newform = new Form2();
+            LOGIN newform = new LOGIN();
             newform.Show();
             this.Hide();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form2 newform = new Form2();
+            LOGIN newform = new LOGIN();
             newform.Show();
             this.Hide();
         }

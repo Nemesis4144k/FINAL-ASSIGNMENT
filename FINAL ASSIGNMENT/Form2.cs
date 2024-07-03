@@ -33,34 +33,34 @@ namespace FINAL_ASSIGNMENT
             String User_password;
             Username = txt_username.Text;
             User_password = txt_password.Text;
-            try
-            {
+           
                 String Querry = "Select * From Users Where Username = '" + Username + "' AND User_Password = '" + User_password + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(Querry, Conn);
 
                 DataTable dtable = new DataTable();
                 sda.Fill(dtable);
-
-                if (dtable.Rows.Count>0)
+            try
+            {
+                if (dtable.Rows.Count > 0)
                 {
                     Username = txt_username.Text;
                     User_password = txt_password.Text;
 
                     // to go to dashboard
-                    Form4 form4= new Form4();
+                    Form4 form4 = new Form4();
                     form4.Show();
                     this.Hide();
-                    
-                    
+
+
 
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Login Details","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Login Details", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_username.Clear();
                     txt_password.Clear();
                     //to focus username
-                    txt_username.Focus();   
+                    txt_username.Focus();
                 }
             }
             catch
@@ -71,7 +71,6 @@ namespace FINAL_ASSIGNMENT
             {
                 Conn.Close();
             }
-
 
         }
 

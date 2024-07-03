@@ -43,13 +43,14 @@ namespace FINAL_ASSIGNMENT
             con.Close();
 
             //Balance
-            int sum_expense = Convert.ToInt32(label5.Text);
-            int sum_income = Convert.ToInt32(label7.Text);
+            int sum_expense, sum_income;
+            sum_expense = Convert.ToInt32(label5.Text);
+            sum_income = Convert.ToInt32(label7.Text);
             int balance = sum_income - sum_expense;
             label6.Text = ("Rs." + balance.ToString());
 
             con.Open();
-            string Query_3 = "Select SUM(Expense_Amount) From Expense where Username='"+LOGIN.Username+"' and Expense_Type='Fundamental Needs'"  ;
+            string Query_3 = "Select SUM(Expene_Amount) From Expenses where Username='"+LOGIN.Username+"' and Expense_Type='Fundamental Needs'"  ;
             SqlCommand cmd_3 = new SqlCommand(Query_3, con);
             SqlDataReader sum_f_needs = cmd_3.ExecuteReader();
             while (sum_f_needs.Read())

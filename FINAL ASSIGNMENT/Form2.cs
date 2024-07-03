@@ -39,8 +39,7 @@ namespace FINAL_ASSIGNMENT
 
                 DataTable dtable = new DataTable();
                 sda.Fill(dtable);
-            try
-            {
+            
                 if (dtable.Rows.Count > 0)
                 {
                     Username = txt_username.Text;
@@ -62,15 +61,7 @@ namespace FINAL_ASSIGNMENT
                     //to focus username
                     txt_username.Focus();
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Error");
-            }
-            finally
-            {
-                Conn.Close();
-            }
+
 
         }
 

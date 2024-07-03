@@ -36,7 +36,7 @@ namespace FINAL_ASSIGNMENT
             newform.Show();
             this.Hide();
         }
-
+          
         private void button3_Click(object sender, EventArgs e)
         {
             
@@ -63,7 +63,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             
-            string Querry = "Select SUM(Expene_Amount) From Expenses where Username='"+LOGIN.Username+"'";
+            string Querry = "Select SUM(Expense_Amount) From Expenses where Username='"+LOGIN.Username+"'";
             SqlCommand cmd = new SqlCommand(Querry, con);
             
             SqlDataReader sum = cmd.ExecuteReader();

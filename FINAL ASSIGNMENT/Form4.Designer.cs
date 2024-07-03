@@ -52,9 +52,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,8 +123,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.progressBar3);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.Wants_btn);
             this.groupBox2.Controls.Add(this.Fundamental_needs_btn);
@@ -315,6 +311,7 @@
             this.button1.Text = "Progress Tracker";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // button3
             // 
@@ -323,7 +320,7 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(664, 281);
+            this.button3.Location = new System.Drawing.Point(656, 218);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
             this.button3.Size = new System.Drawing.Size(169, 101);
@@ -355,28 +352,9 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Rs.";
             // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(118, 31);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(204, 23);
-            this.progressBar3.TabIndex = 10;
-            this.progressBar3.Click += new System.EventHandler(this.progressBar3_Click);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(344, 31);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 21);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "00.00";
             // 
             // Form4
             // 
@@ -409,7 +387,6 @@
             this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -441,8 +418,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Label label10;
     }
 }

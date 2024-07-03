@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Reflection.Emit;
 
 namespace FINAL_ASSIGNMENT
 {
@@ -54,6 +55,26 @@ namespace FINAL_ASSIGNMENT
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            
+            string Querry = "Select SUM(Expene_Amount) From Expenses where Username='"+LOGIN.Username+"'";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            
+            SqlDataReader sum = cmd.ExecuteReader();
+            while (sum.Read())
+            {
+                label4.Text = sum.GetValue(0).ToString();
+            }
+            
+            
+            con.Close();
+            MessageBox.Show("Successfully Refreshed");
         }
     }
 }

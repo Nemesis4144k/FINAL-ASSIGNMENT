@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 
 namespace FINAL_ASSIGNMENT
 {
+    
     public partial class LOGIN: Form
     {
         public static string Username = "";
@@ -21,6 +22,7 @@ namespace FINAL_ASSIGNMENT
         SqlConnection Conn = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+           
 
         }
 
@@ -33,7 +35,7 @@ namespace FINAL_ASSIGNMENT
             User_password = txt_password.Text;
             try
             {
-                String Querry = "Select *From Users Where Username = '" + Username + "' AND User_Password = '" + User_password + "'";
+                String Querry = "Select * From Users Where Username = '" + Username + "' AND User_Password = '" + User_password + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(Querry, Conn);
 
                 DataTable dtable = new DataTable();
@@ -48,7 +50,7 @@ namespace FINAL_ASSIGNMENT
                     Form4 form4= new Form4();
                     form4.Show();
                     this.Hide();
-                    Form5 form5=new Form5();
+                    
                     
 
                 }

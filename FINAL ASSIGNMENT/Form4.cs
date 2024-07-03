@@ -96,7 +96,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             //Expense
             con.Open();
-            string Query_1= "Select SUM(Expense_Amount) From Expenses where Username='"+LOGIN.Username+"'";
+            string Query_1= "Select SUM(Expense_Amount) From Expenses where Username='"+LOGIN.Username+ "'and year(Expense_DateTime)=year(getdate()) and month(Expense_DateTime)=month(getdate())";
             SqlCommand cmd_1 = new SqlCommand(Query_1, con);
             SqlDataReader sum_exp = cmd_1.ExecuteReader();
             while (sum_exp.Read())
@@ -107,7 +107,7 @@ namespace FINAL_ASSIGNMENT
 
             //Income
             con.Open();
-            string Query_2 = "Select SUM(Income_Amount) From Income where Username='"+LOGIN.Username+"'";
+            string Query_2 = "Select SUM(Income_Amount) From Income where Username='"+LOGIN.Username+"' and year(Income_DateTime)= year(getdate()) and month(Income_DateTime)= month(getdate())";
             SqlCommand cmd_2 = new SqlCommand(Query_2, con);
             SqlDataReader sum_in = cmd_2.ExecuteReader();
             while (sum_in.Read())

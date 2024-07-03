@@ -320,7 +320,7 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(656, 218);
+            this.button3.Location = new System.Drawing.Point(668, 269);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
             this.button3.Size = new System.Drawing.Size(169, 101);

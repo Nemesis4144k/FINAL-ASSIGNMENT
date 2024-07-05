@@ -175,5 +175,10 @@ namespace FINAL_ASSIGNMENT
                 form8.Show();
             this.Hide();    
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

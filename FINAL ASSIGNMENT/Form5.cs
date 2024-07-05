@@ -27,7 +27,15 @@ namespace FINAL_ASSIGNMENT
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Food','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -75,6 +83,97 @@ namespace FINAL_ASSIGNMENT
             
             con.Close();
             MessageBox.Show("Successfully Refreshed");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Healthcare','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Utilities','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Phonebills','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Education','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Transportation','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Groceries','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            String Exp_Amount = textBox2.Text;
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Children's Education','" + Exp_Amount + "')";
+            SqlCommand cmd = new SqlCommand(Querry, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Expense Successfully added!");
         }
     }
 }

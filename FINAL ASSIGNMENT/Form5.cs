@@ -169,7 +169,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Children's Education','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Children Education','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();

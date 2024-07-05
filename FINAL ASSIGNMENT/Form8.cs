@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace FINAL_ASSIGNMENT
 {
@@ -17,7 +18,14 @@ namespace FINAL_ASSIGNMENT
         public Progress_tracker()
         {
             InitializeComponent();
-         
+            // Set the title
+            chart1.Titles.Clear();
+
+            Title chartTitle = chart1.Titles.Add("Expense Distribution");
+            chartTitle.Font = new Font("Segoe UI", 16, FontStyle.Bold);
+
+            
+
 
 
         }
@@ -91,7 +99,37 @@ namespace FINAL_ASSIGNMENT
             //Percentage spent
             int spent = Convert.ToInt32(label11.Text);
             int p_spent = (spent / new_total) * 100;
-            label13.Text = p_spent.ToString();                          
+            label13.Text = p_spent.ToString();
+
+            //pie chart
+            string query = "SELECT Expense_Name, SUM(expense_amount) AS total_amount FROM Expenses where Expense_Type='Fundamental Needs' and year(Expense_DateTime)= year(getdate()) and month(Expense_DateTime)= month(getdate()) GROUP BY Expense_Name ";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            DataTable dtExpenses = new DataTable();
+            con.Open();
+            adapter.Fill(dtExpenses);
+
+            chart1.Series.Clear();
+            chart1.ChartAreas.Clear();
+            chart1.ChartAreas.Add(new ChartArea());
+
+            Series series = new Series
+            {
+                Name = "Expenses",
+                IsValueShownAsLabel = true,
+                ChartType = SeriesChartType.Pie
+            };
+
+            chart1.Series.Add(series);
+
+            // Add data points to the series
+            foreach (DataRow row in dtExpenses.Rows)
+            {
+                series.Points.AddXY(row["Expense_Name"], row["total_amount"]);
+            }
+            // Set the series labels font
+            series.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+
+
         }
 
         private void GroupBox3_Enter(object sender, EventArgs e)
@@ -154,6 +192,34 @@ namespace FINAL_ASSIGNMENT
             int p_spent = (spent / new_total) * 100;
             label26.Text = p_spent.ToString();
 
+            string query = "SELECT Expense_Name, SUM(expense_amount) AS total_amount FROM Expenses where Expense_Type='Wants' and year(Expense_DateTime)= year(getdate()) and month(Expense_DateTime)= month(getdate()) GROUP BY Expense_Name ";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            DataTable dtExpenses = new DataTable();
+            con.Open();
+            adapter.Fill(dtExpenses);
+
+            chart1.Series.Clear();
+            chart1.ChartAreas.Clear();
+            chart1.ChartAreas.Add(new ChartArea());
+
+            Series series = new Series
+            {
+                Name = "Expenses",
+                IsValueShownAsLabel = true,
+                ChartType = SeriesChartType.Pie
+            };
+
+            chart1.Series.Add(series);
+
+            // Add data points to the series
+            foreach (DataRow row in dtExpenses.Rows)
+            {
+                series.Points.AddXY(row["Expense_Name"], row["total_amount"]);
+            }
+
+            // Set the series labels font
+            series.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -208,6 +274,34 @@ namespace FINAL_ASSIGNMENT
             int spent = Convert.ToInt32(label41.Text);
             int p_spent = (spent / new_total) * 100;
             label40.Text = p_spent.ToString();
+
+            string query = "SELECT Expense_Name, SUM(expense_amount) AS total_amount FROM Expenses where Expense_Type='Savings' and year(Expense_DateTime)= year(getdate()) and month(Expense_DateTime)= month(getdate()) GROUP BY Expense_Name ";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+            DataTable dtExpenses = new DataTable();
+            con.Open();
+            adapter.Fill(dtExpenses);
+
+            chart1.Series.Clear();
+            chart1.ChartAreas.Clear();
+            chart1.ChartAreas.Add(new ChartArea());
+
+            Series series = new Series
+            {
+                Name = "Expenses",
+                IsValueShownAsLabel = true,
+                ChartType = SeriesChartType.Pie
+            };
+
+            chart1.Series.Add(series);
+
+            // Add data points to the series
+            foreach (DataRow row in dtExpenses.Rows)
+            {
+                series.Points.AddXY(row["Expense_Name"], row["total_amount"]);
+            }
+            // Set the series labels font
+            series.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+
         }
 
         private void Button12_Click(object sender, EventArgs e)

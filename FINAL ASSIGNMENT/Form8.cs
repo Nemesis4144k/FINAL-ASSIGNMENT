@@ -72,12 +72,25 @@ namespace FINAL_ASSIGNMENT
             int new_total;
             int expense_percent = Convert.ToInt32(label15.Text);          
             con.Close();
-            int sum_income = Form4.sum_income; 
+
+            //Income
+            con.Open();
+            string Query_4 = "Select SUM(Income_Amount) From Income where Username='" + LOGIN.Username + "' and year(Income_DateTime)= year(getdate()) and month(Income_DateTime)= month(getdate())";
+            SqlCommand cmd_4 = new SqlCommand(Query_4, con);
+            SqlDataReader sum_in = cmd_4.ExecuteReader();
+            while (sum_in.Read())
+            {
+
+                label48.Text = sum_in.GetValue(0).ToString();
+            }
+            con.Close();
+            int sum_income = Convert.ToInt32(label48.Text);
+
             new_total = (expense_percent * sum_income) / 100;
                 label10.Text = new_total.ToString();
             //Percentage spent
             int spent = Convert.ToInt32(label11.Text);
-            int p_spent = spent / new_total * 100;
+            int p_spent = (spent / new_total) * 100;
             label13.Text = p_spent.ToString();                          
         }
 
@@ -115,15 +128,30 @@ namespace FINAL_ASSIGNMENT
             }
             con.Close();
             //Budget for the month
-            int new_total;
-            int expense_percent = Convert.ToInt32(label15.Text);
+       
             con.Close();
-            int sum_income = Form4.sum_income;
+
+            //Income
+            con.Open();
+            string Query_4 = "Select SUM(Income_Amount) From Income where Username='" + LOGIN.Username + "' and year(Income_DateTime)= year(getdate()) and month(Income_DateTime)= month(getdate())";
+            SqlCommand cmd_4 = new SqlCommand(Query_4, con);
+            SqlDataReader sum_in = cmd_4.ExecuteReader();
+            while (sum_in.Read())
+            {
+
+                label48.Text = sum_in.GetValue(0).ToString();
+            }
+            con.Close();
+
+            int new_total;
+            int expense_percent = Convert.ToInt32(label25.Text);
+            int sum_income = Convert.ToInt32(label48.Text);
+
             new_total = (expense_percent * sum_income) / 100;
             label28.Text = new_total.ToString();
             //Percentage spent
-            int spent = Convert.ToInt32(label11.Text);
-            int p_spent = spent / new_total * 100;
+            int spent = Convert.ToInt32(label27.Text);
+            int p_spent = (spent / new_total) * 100;
             label26.Text = p_spent.ToString();
 
         }
@@ -158,15 +186,40 @@ namespace FINAL_ASSIGNMENT
             con.Close();
             //Budget for the month
             int new_total;
-            int expense_percent = Convert.ToInt32(label15.Text);
+            int expense_percent = Convert.ToInt32(label39.Text);
             con.Close();
-            int sum_income = Form4.sum_income;
+
+            //Income
+            con.Open();
+            string Query_4 = "Select SUM(Income_Amount) From Income where Username='" + LOGIN.Username + "' and year(Income_DateTime)= year(getdate()) and month(Income_DateTime)= month(getdate())";
+            SqlCommand cmd_4 = new SqlCommand(Query_4, con);
+            SqlDataReader sum_in = cmd_4.ExecuteReader();
+            while (sum_in.Read())
+            {
+
+                label48.Text = sum_in.GetValue(0).ToString();
+            }
+            con.Close();
+            int sum_income = Convert.ToInt32(label48.Text);
+
             new_total = (expense_percent * sum_income) / 100;
             label42.Text = new_total.ToString();
             //Percentage spent
-            int spent = Convert.ToInt32(label11.Text);
-            int p_spent = spent / new_total * 100;
+            int spent = Convert.ToInt32(label41.Text);
+            int p_spent = (spent / new_total) * 100;
             label40.Text = p_spent.ToString();
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();  
+            form4.Show();
+            this.Hide();
+        }
+
+        private void Label48_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

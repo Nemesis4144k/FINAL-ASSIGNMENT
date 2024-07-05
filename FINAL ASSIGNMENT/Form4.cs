@@ -58,7 +58,9 @@ namespace FINAL_ASSIGNMENT
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form10 form10 = new Form10();
+            form10.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -179,6 +181,13 @@ namespace FINAL_ASSIGNMENT
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button4_Click_1(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13();
+            form13.Show();
+            this.Hide();
         }
     }
 }

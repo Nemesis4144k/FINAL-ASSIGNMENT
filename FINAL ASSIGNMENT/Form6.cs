@@ -32,7 +32,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Subscriptions','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Subscriptions','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -46,7 +46,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Donations','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Donations','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -60,7 +60,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Gym','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Gym','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -74,7 +74,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Clothing','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Clothing','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -88,7 +88,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Hobbies','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Hobbies','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -102,7 +102,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Cosmetics','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Cosmetics','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -116,7 +116,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Electronic Goods','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Wants','Electronic Goods','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();

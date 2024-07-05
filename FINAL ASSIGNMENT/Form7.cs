@@ -31,7 +31,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Emergency Fund','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Emergency Fund','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -45,7 +45,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Debt Payments','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Debt Payments','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -59,7 +59,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Insurance','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Insurance','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -73,7 +73,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Vacation Fund','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Vacation Fund','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -87,7 +87,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','House Fund','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','House Fund','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -101,7 +101,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Vehicle Fund','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Vehicle Fund','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -115,7 +115,7 @@ namespace FINAL_ASSIGNMENT
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             String Exp_Amount = textBox2.Text;
-            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Fundamental Needs','Pension Contribution','" + Exp_Amount + "')";
+            string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Pension Contribution','" + Exp_Amount + "')";
             SqlCommand cmd = new SqlCommand(Querry, con);
             cmd.ExecuteNonQuery();
             con.Close();

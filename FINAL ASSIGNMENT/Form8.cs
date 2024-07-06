@@ -122,7 +122,7 @@ namespace FINAL_ASSIGNMENT
             }
             // Set the series labels font
             series.Font = new Font("Segoe UI", 12, FontStyle.Regular);
-
+            con.Close();
 
         }
 
@@ -212,7 +212,7 @@ namespace FINAL_ASSIGNMENT
 
             // Set the series labels font
             series.Font = new Font("Segoe UI", 12, FontStyle.Regular);
-
+            con.Close();
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -293,6 +293,7 @@ namespace FINAL_ASSIGNMENT
             }
             // Set the series labels font
             series.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+            con.Close();
 
         }
 

@@ -39,5 +39,12 @@ namespace FINAL_ASSIGNMENT
             con.Close();
             MessageBox.Show("Budget Successfully set!");
         }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();  
+            form4.Show();
+            this.Hide();
+        }
     }
 }

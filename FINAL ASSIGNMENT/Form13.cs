@@ -19,7 +19,7 @@ namespace FINAL_ASSIGNMENT
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
         private void Form13_Load(object sender, EventArgs e)
         {
 
@@ -33,9 +33,7 @@ namespace FINAL_ASSIGNMENT
         {
 
             if (textBox1.Text != "")
-            {
-                String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-                SqlConnection con = new SqlConnection(ConnectionString);
+            {             
                 con.Open();
 
                 string query = "SELECT Goal_Name,Goal_Start_DateTime,Goal_Current_Amount,Goal_Total_Amount,Goal_End_Date FROM goals Where Goal_ID='" + textBox1.Text + "'";
@@ -81,10 +79,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button3_Click(object sender, EventArgs e)
         {
-             
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
-
+                   
             con.Open();
             string Query_1 = "select * from Goals where Username='" + LOGIN.Username + "'";
 
@@ -104,10 +99,7 @@ namespace FINAL_ASSIGNMENT
         private void Button2_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "" && textBox2.Text != "")
-            {
-                String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-                SqlConnection con = new SqlConnection(ConnectionString);
-
+            {              
                 con.Open();
                 string query = "UPDATE Goals SET Goal_Current_Amount = '" + textBox2.Text + "' WHERE Goal_ID = '" + textBox1.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -125,10 +117,7 @@ namespace FINAL_ASSIGNMENT
         private void Button4_Click(object sender, EventArgs e)
         {
             if (textBox3.Text != "")
-            {
-                String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-                SqlConnection con = new SqlConnection(ConnectionString);
-
+            {        
                 con.Open();
                 string Query = "delete from Goals Where Goal_ID='" + textBox3.Text + "'";
                 SqlCommand cmd = new SqlCommand(Query, con);
@@ -147,6 +136,17 @@ namespace FINAL_ASSIGNMENT
             Form4 form4 = new Form4();
             form4.Show();
             this.Hide();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string Query = "Insert into Goals values('" + LOGIN.Username + "','"+textBox4.Text+"',SYSDATETIME(),'"+textBox5.Text+"','"+textBox7.Text+"','" +textBox6.Text+"')";
+            SqlCommand cmd = new SqlCommand(Query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Goal Successfully added!");
+           
         }
     }
 }

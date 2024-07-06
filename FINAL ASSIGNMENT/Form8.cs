@@ -24,7 +24,7 @@ namespace FINAL_ASSIGNMENT
             Title chartTitle = chart1.Titles.Add("Expense Distribution");
             chartTitle.Font = new Font("Segoe UI", 16, FontStyle.Bold);        
         }
-        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False");
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -305,6 +305,11 @@ namespace FINAL_ASSIGNMENT
         }
 
         private void Label48_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

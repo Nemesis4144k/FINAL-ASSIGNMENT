@@ -17,7 +17,7 @@ namespace FINAL_ASSIGNMENT
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False");
         private void button12_Click(object sender, EventArgs e)
         {
             Form4 newform = new Form4();
@@ -113,6 +113,11 @@ namespace FINAL_ASSIGNMENT
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Expense Successfully added!");
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

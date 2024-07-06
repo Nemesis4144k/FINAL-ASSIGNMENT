@@ -19,7 +19,7 @@ namespace FINAL_ASSIGNMENT
         {
             InitializeComponent();
         }
-        SqlConnection Conn = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
+        SqlConnection Conn = new SqlConnection("Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False");
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
            
@@ -66,6 +66,11 @@ namespace FINAL_ASSIGNMENT
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

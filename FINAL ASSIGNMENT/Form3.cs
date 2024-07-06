@@ -20,7 +20,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button2_Click(object sender, EventArgs e)
         {
-         String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+         String ConnectionString = "Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False";
          SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             string username = textBox1.Text;
@@ -36,6 +36,11 @@ namespace FINAL_ASSIGNMENT
             LOGIN form2 = new LOGIN();
             form2.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

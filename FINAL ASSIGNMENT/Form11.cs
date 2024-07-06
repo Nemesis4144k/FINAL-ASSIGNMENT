@@ -25,7 +25,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
+            String ConnectionString = ("Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False");
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             int Budget_F_needs= Convert.ToInt32(textBox2.Text);
@@ -45,6 +45,11 @@ namespace FINAL_ASSIGNMENT
             Form4 form4 = new Form4();  
             form4.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

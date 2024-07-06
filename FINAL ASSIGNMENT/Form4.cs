@@ -19,15 +19,9 @@ namespace FINAL_ASSIGNMENT
        
         public Form4()
         {
-            InitializeComponent();
-          
-         
-
-              
-          
-
+            InitializeComponent();                            
         }
-        
+        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -94,8 +88,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
             //Expense
             con.Open();
             string Query_1= "Select SUM(Expense_Amount) From Expenses where Username='"+LOGIN.Username+ "'and year(Expense_DateTime)=year(getdate()) and month(Expense_DateTime)=month(getdate())";
@@ -134,8 +127,7 @@ namespace FINAL_ASSIGNMENT
 
         private void label7_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+       
             con.Open();
             string Query_2 = "Select SUM(Income_Amount) From Income where Username='"+LOGIN.Username+"'";
             SqlCommand cmd_2 = new SqlCommand(Query_2, con);
@@ -151,8 +143,7 @@ namespace FINAL_ASSIGNMENT
         private void label5_Click(object sender, EventArgs e)
         {
 
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+        
             //Expense
             con.Open();
             string Query_1 = "Select SUM(Expense_Amount) From Expenses where Username='"+LOGIN.Username+"'";

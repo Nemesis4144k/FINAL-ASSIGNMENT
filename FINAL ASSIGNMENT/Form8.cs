@@ -22,14 +22,9 @@ namespace FINAL_ASSIGNMENT
             chart1.Titles.Clear();
 
             Title chartTitle = chart1.Titles.Add("Expense Distribution");
-            chartTitle.Font = new Font("Segoe UI", 16, FontStyle.Bold);
-
-            
-
-
-
+            chartTitle.Font = new Font("Segoe UI", 16, FontStyle.Bold);        
         }
-
+        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -52,8 +47,7 @@ namespace FINAL_ASSIGNMENT
         private void Button1_Click(object sender, EventArgs e)
         {   //Month
             label9.Text = comboBox1.Text;
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
             //Expense total
             con.Open();
             string Query_3 = "Select SUM(Expense_Amount) From Expenses where Username='" + LOGIN.Username + "' and Expense_Type='"+comboBox2.Text+"'";
@@ -141,8 +135,7 @@ namespace FINAL_ASSIGNMENT
         {
             //Month
             label30.Text = comboBox1.Text;
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+          
             //Expense total
             con.Open();
             string Query_3 = "Select SUM(Expense_Amount) From Expenses where Username='" + LOGIN.Username + "' and Expense_Type='" + comboBox2.Text + "'";
@@ -226,8 +219,7 @@ namespace FINAL_ASSIGNMENT
         {
             //Month
             label44.Text = comboBox1.Text;
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
             //Expense total
             con.Open();
             string Query_3 = "Select SUM(Expense_Amount) From Expenses where Username='" + LOGIN.Username + "' and Expense_Type='" + comboBox2.Text + "'";

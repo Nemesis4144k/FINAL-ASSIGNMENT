@@ -17,7 +17,7 @@ namespace FINAL_ASSIGNMENT
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
         private void button12_Click(object sender, EventArgs e)
         {
             Form4 newform = new Form4();
@@ -27,8 +27,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button3_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+           
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Emergency Fund','" + Exp_Amount + "')";
@@ -41,8 +40,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+         
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Debt Payments','" + Exp_Amount + "')";
@@ -55,8 +53,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Insurance','" + Exp_Amount + "')";
@@ -69,8 +66,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button8_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Vacation Fund','" + Exp_Amount + "')";
@@ -83,8 +79,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button6_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+          
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','House Fund','" + Exp_Amount + "')";
@@ -97,8 +92,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button7_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+        
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Vehicle Fund','" + Exp_Amount + "')";
@@ -111,8 +105,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button5_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+         
             con.Open();
             String Exp_Amount = textBox2.Text;
             string Querry = "Insert into Expenses values('" + LOGIN.Username + "',SYSDATETIME(),'Savings','Pension Contribution','" + Exp_Amount + "')";

@@ -17,7 +17,7 @@ namespace FINAL_ASSIGNMENT
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection("Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False");
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -25,8 +25,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+          
 
             con.Open();
             string Query_1 = "select * from Income where Username='" + LOGIN.Username + "'";
@@ -63,8 +62,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
 
             con.Open();
             string Query = "delete from Expenses Where Expense_ID='" + textBox2.Text + "'";
@@ -78,8 +76,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            String ConnectionString = "Data Source=Nemesis\\SQLEXPRESS02;Initial Catalog=\"Finall Assignment\";Integrated Security=True;Encrypt=False";
-            SqlConnection con = new SqlConnection(ConnectionString);
+       
 
             con.Open();
             string Query = "delete from Income Where Income_ID='" + textBox2.Text + "'";

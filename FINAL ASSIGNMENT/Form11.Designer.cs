@@ -191,6 +191,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button7);
             this.Name = "Form11";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form11";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

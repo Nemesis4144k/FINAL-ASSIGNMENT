@@ -149,18 +149,18 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(15, 339);
+            this.label11.Location = new System.Drawing.Point(15, 340);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(229, 30);
+            this.label11.Size = new System.Drawing.Size(262, 30);
             this.label11.TabIndex = 49;
-            this.label11.Text = "Add towards goal : Rs.";
+            this.label11.Text = "New Current Amount : Rs.";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(251, 339);
+            this.textBox2.Location = new System.Drawing.Point(283, 339);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 35);
+            this.textBox2.Size = new System.Drawing.Size(195, 35);
             this.textBox2.TabIndex = 48;
             // 
             // label10
@@ -192,9 +192,9 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(250, 289);
+            this.textBox1.Location = new System.Drawing.Point(283, 289);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 35);
+            this.textBox1.Size = new System.Drawing.Size(194, 35);
             this.textBox1.TabIndex = 45;
             // 
             // label9

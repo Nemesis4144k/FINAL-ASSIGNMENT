@@ -20,7 +20,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button2_Click(object sender, EventArgs e)
         {
-         String ConnectionString = "Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False";
+         String ConnectionString = ("Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False");
          SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
             string username = textBox1.Text;

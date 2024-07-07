@@ -217,5 +217,13 @@ namespace FINAL_ASSIGNMENT
         {
 
         }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+
+            Previous_Transactions form10 = new Previous_Transactions();
+            form10.Show();
+            this.Hide();
+        }
     }
 }

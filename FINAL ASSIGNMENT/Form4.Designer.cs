@@ -55,6 +55,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -68,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(43, 138);
+            this.label2.Location = new System.Drawing.Point(22, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(161, 47);
             this.label2.TabIndex = 1;
@@ -79,7 +80,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(375, 138);
+            this.label1.Location = new System.Drawing.Point(357, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 47);
             this.label1.TabIndex = 2;
@@ -90,7 +91,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(43, 262);
+            this.label4.Location = new System.Drawing.Point(22, 271);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(289, 47);
             this.label4.TabIndex = 4;
@@ -102,7 +103,7 @@
             this.groupBox2.Controls.Add(this.Wants_btn);
             this.groupBox2.Controls.Add(this.Fundamental_needs_btn);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(51, 493);
+            this.groupBox2.Location = new System.Drawing.Point(51, 534);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1061, 193);
             this.groupBox2.TabIndex = 13;
@@ -334,11 +335,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 36);
+            this.label3.Location = new System.Drawing.Point(11, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(314, 71);
+            this.label3.Size = new System.Drawing.Size(284, 65);
             this.label3.TabIndex = 23;
             this.label3.Text = "WELCOME ";
             // 
@@ -347,11 +348,12 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Black", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(326, 36);
+            this.label10.Location = new System.Drawing.Point(301, 30);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(178, 71);
             this.label10.TabIndex = 24;
             this.label10.Text = "XXXX";
+            this.label10.Click += new System.EventHandler(this.Label10_Click);
             // 
             // groupBox1
             // 
@@ -369,7 +371,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(615, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(646, 106);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(239, 219);
             this.pictureBox1.TabIndex = 26;
@@ -379,7 +381,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(561, 271);
+            this.pictureBox2.Location = new System.Drawing.Point(578, 331);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(358, 216);
             this.pictureBox2.TabIndex = 27;
@@ -395,12 +397,29 @@
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(1176, 12);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
+            this.button8.Size = new System.Drawing.Size(93, 32);
+            this.button8.TabIndex = 29;
+            this.button8.Text = "SIGN OUT";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(1281, 749);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -465,5 +484,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button8;
     }
 }

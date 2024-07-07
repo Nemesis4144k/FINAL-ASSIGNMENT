@@ -193,6 +193,7 @@
             this.button9.Text = "Previous Transactions";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // button12
             // 

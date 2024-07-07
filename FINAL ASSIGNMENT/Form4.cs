@@ -182,5 +182,17 @@ namespace FINAL_ASSIGNMENT
             form13.Show();
             this.Hide();
         }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            LOGIN form2 = new LOGIN();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void Label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

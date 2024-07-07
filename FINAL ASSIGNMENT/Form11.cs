@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form11 : Form
+    public partial class Budget : Form
     {
         public static int Budget_F_needs;
         public static int Budget_Wants;
         public static int Budget_Savings;
         public static string Budget_Month = "";
-        public Form11()
+        public Budget()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button7_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();  
+            Home form4 = new Home();  
             form4.Show();
             this.Hide();
         }

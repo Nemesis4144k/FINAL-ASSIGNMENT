@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form13 : Form
+    public partial class Goals : Form
     {
         private decimal goalFinalAmount;
         private decimal goalCurrentAmount;
-        public Form13()
+        public Goals()
         {
             InitializeComponent();
         }
@@ -133,7 +133,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button7_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            Home form4 = new Home();
             form4.Show();
             this.Hide();
         }

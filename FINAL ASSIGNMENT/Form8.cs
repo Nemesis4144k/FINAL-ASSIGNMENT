@@ -90,11 +90,7 @@ namespace FINAL_ASSIGNMENT
 
             new_total = (expense_percent * sum_income) / 100;
                 label10.Text = new_total.ToString();
-            //Percentage spent
-            int spent = Convert.ToInt32(label11.Text);
-            int p_spent = (spent / new_total) * 100;
-            label13.Text = p_spent.ToString();
-
+        
             //pie chart
             string query = "SELECT Expense_Name, SUM(expense_amount) AS total_amount FROM Expenses where Expense_Type='Fundamental Needs' and year(Expense_DateTime)= year(getdate()) and month(Expense_DateTime)= month(getdate()) GROUP BY Expense_Name ";
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -179,11 +175,7 @@ namespace FINAL_ASSIGNMENT
             int sum_income = Convert.ToInt32(label48.Text);
 
             new_total = (expense_percent * sum_income) / 100;
-            label28.Text = new_total.ToString();
-            //Percentage spent
-            int spent = Convert.ToInt32(label27.Text);
-            int p_spent = (spent / new_total) * 100;
-            label26.Text = p_spent.ToString();
+            label28.Text = new_total.ToString();          
 
             string query = "SELECT Expense_Name, SUM(expense_amount) AS total_amount FROM Expenses where Expense_Type='Wants' and year(Expense_DateTime)= year(getdate()) and month(Expense_DateTime)= month(getdate()) GROUP BY Expense_Name ";
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -262,10 +254,6 @@ namespace FINAL_ASSIGNMENT
 
             new_total = (expense_percent * sum_income) / 100;
             label42.Text = new_total.ToString();
-            //Percentage spent
-            int spent = Convert.ToInt32(label41.Text);
-            int p_spent = (spent / new_total) * 100;
-            label40.Text = p_spent.ToString();
 
             string query = "SELECT Expense_Name, SUM(expense_amount) AS total_amount FROM Expenses where Expense_Type='Savings' and year(Expense_DateTime)= year(getdate()) and month(Expense_DateTime)= month(getdate()) GROUP BY Expense_Name ";
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -299,7 +287,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button12_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();  
+            Home form4 = new Home();  
             form4.Show();
             this.Hide();
         }
@@ -312,6 +300,13 @@ namespace FINAL_ASSIGNMENT
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            Previous_Transactions form10 = new Previous_Transactions();
+            form10.Show();
+            this.Hide();
         }
     }
 }

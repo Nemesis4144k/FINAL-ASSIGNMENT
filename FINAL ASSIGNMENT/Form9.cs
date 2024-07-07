@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form9 : Form
+    public partial class Income : Form
     {
-        public Form9()
+        public Income()
         {
             InitializeComponent();
         }
@@ -36,7 +36,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button7_Click_1(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            Home form4 = new Home();
             form4.Show();
             this.Hide();
         }

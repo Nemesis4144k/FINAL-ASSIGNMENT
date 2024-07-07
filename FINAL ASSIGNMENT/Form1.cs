@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form1 : Form
+    public partial class Welcome : Form
     {
-        public Form1()
+        public Welcome()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace FINAL_ASSIGNMENT
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 newform = new Form3();
+            Sign_up newform = new Sign_up();
             newform.Show();
             this.Hide();
         }

@@ -46,7 +46,7 @@ namespace FINAL_ASSIGNMENT
                     User_password = txt_password.Text;
 
                     // to go to dashboard
-                    Form4 form4 = new Form4();
+                    Home form4 = new Home();
                     form4.Show();
                     this.Hide();
 
@@ -73,6 +73,13 @@ namespace FINAL_ASSIGNMENT
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Sign_up form3 = new Sign_up();
+            form3.Show();
+            this.Hide();
         }
     }
 }

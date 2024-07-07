@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form3 : Form
+    public partial class Sign_up : Form
     {
-        public Form3()
+        public Sign_up()
         {
             InitializeComponent();
         }

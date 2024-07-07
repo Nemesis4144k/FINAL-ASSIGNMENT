@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form10 : Form
+    public partial class Previous_Transactions : Form
     {
-        public Form10()
+        public Previous_Transactions()
         {
             InitializeComponent();
         }
@@ -55,7 +55,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button7_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            Home form4 = new Home();
             form4.Show();
             this.Hide();
         }

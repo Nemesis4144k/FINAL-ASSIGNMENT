@@ -12,14 +12,16 @@ using FINAL_ASSIGNMENT.Finall_AssignmentDataSetTableAdapters;
 
 namespace FINAL_ASSIGNMENT
 {
-    public partial class Form4 : Form       
+    public partial class Home : Form       
     {
         public static int sum_income = 60000;
         
        
-        public Form4()
+        public Home()
         {
-            InitializeComponent();                            
+            InitializeComponent();
+            label10.Text = LOGIN.Username;
+
         }
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-P43TIUK\\SQLEXPRESS2024;Initial Catalog=\"final assaigment\";Integrated Security=True;Encrypt=False");
 
@@ -45,14 +47,14 @@ namespace FINAL_ASSIGNMENT
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form11 form11 = new Form11();  
+            Budget form11 = new Budget();  
             form11.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form10 form10 = new Form10();
+            Previous_Transactions form10 = new Previous_Transactions();
             form10.Show();
             this.Hide();
         }
@@ -60,28 +62,28 @@ namespace FINAL_ASSIGNMENT
         private void button3_Click(object sender, EventArgs e)
         {
             
-            Form5 form5 = new Form5();
+            Fundamental_Needs form5 = new Fundamental_Needs();
             form5.Show();
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();  
+            Wants form6 = new Wants();  
             form6.Show(); 
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();  
+            Savings form7 = new Savings();  
             form7.Show();
             this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form9 form9 = new Form9();
+            Income form9 = new Income();
             form9.Show();
             this.Hide();
         }
@@ -176,7 +178,7 @@ namespace FINAL_ASSIGNMENT
 
         private void Button4_Click_1(object sender, EventArgs e)
         {
-            Form13 form13 = new Form13();
+            Goals form13 = new Goals();
             form13.Show();
             this.Hide();
         }
